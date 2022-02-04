@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     box-sizing: border-box;
     background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', 'sans-serif';
 }
 
 .container {
@@ -15,5 +16,12 @@ div img {
     width: 100%;
 }
 
+.info h1 {
+    display: flex;
+    justify-content: center;
+}
 
-
+.info p {
+    display: flex;
+    padding: 0 15%;
+}
