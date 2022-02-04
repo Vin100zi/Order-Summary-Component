@@ -2,4 +2,14 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: hsl(225, 100%, 94%);
 }
+
+main {
+    background-color: red;
+    min-height: 90vh;
+    margin: 30px 35% 0;
+}
+
+
+
