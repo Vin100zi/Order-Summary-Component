@@ -5,10 +5,14 @@ html, body {
     background-color: hsl(225, 100%, 94%);
 }
 
-main {
-    background-color: red;
+.container {
+    background-color: hsl(225, 100%, 98%);
     min-height: 90vh;
     margin: 30px 35% 0;
+}
+
+div img {
+    width: 100%;
 }
 
 
