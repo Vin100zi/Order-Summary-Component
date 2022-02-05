@@ -6,10 +6,6 @@ html, body {
     font-family: 'Red Hat Display', 'sans-serif';
 }
 
-#bg {
-
-}
-
 .container {
     background-color: hsl(225, 100%, 98%);
     height: auto;
@@ -91,4 +87,21 @@ html, body {
 
 .payment:hover {
     background-color: hsl(224, 23%, 55%);
+}
+
+.cancel {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+.cancel p {
+    margin: 0;
+    color: hsl(224, 23%, 55%);
+    cursor: pointer;
+    transition: 225ms;
+}
+
+.cancel p:hover {
+    color: hsl(245, 75%, 52%);
 }
