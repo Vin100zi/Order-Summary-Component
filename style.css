@@ -10,22 +10,65 @@ html, body {
     background-color: hsl(225, 100%, 98%);
     min-height: 90vh;
     margin: 30px 35% 0;
-    border-radius: 40px;
+    border-radius: 20px;
 }
 
 .header img {
     width: 100%;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .info h1 {
     display: flex;
     justify-content: center;
+    margin-bottom: 0;
 }
 
 .info p {
     display: flex;
     justify-content: center;
     text-align: center;
+    color: hsl(224, 23%, 55%);
+}
+
+.plan {
+    background-color: hsl(225, 46%, 95%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 10%;
+    border-radius: 8px;
+}
+
+.option-plan {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    padding-left: 10%;
+}
+
+.price h2 {
+    margin-bottom: 0;
+    font-size: small;
+}
+
+.price p {
+    margin-top: 0;
+    font-size: small;
+}
+
+.change p {
+    display: flex;
+    font-size: small;
+    color: hsl(223, 93%, 41%);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.change p:hover {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
 }
