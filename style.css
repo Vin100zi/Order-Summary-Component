@@ -6,9 +6,13 @@ html, body {
     font-family: 'Red Hat Display', 'sans-serif';
 }
 
+#bg {
+
+}
+
 .container {
     background-color: hsl(225, 100%, 98%);
-    min-height: 90vh;
+    height: auto;
     margin: 30px 35% 0;
     border-radius: 20px;
 }
@@ -58,6 +62,7 @@ html, body {
 .price p {
     margin-top: 0;
     font-size: small;
+    color: hsl(224, 23%, 55%);
 }
 
 .change p {
@@ -71,4 +76,19 @@ html, body {
 .change p:hover {
     text-decoration: none;
     color: hsl(224, 23%, 55%);
+}
+
+.payment {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 46%, 95%);
+    margin: 5% 10%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 225ms background linear;
+}
+
+.payment:hover {
+    background-color: hsl(224, 23%, 55%);
 }
