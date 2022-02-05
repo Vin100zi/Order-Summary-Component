@@ -10,10 +10,13 @@ html, body {
     background-color: hsl(225, 100%, 98%);
     min-height: 90vh;
     margin: 30px 35% 0;
+    border-radius: 40px;
 }
 
-div img {
+.header img {
     width: 100%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
 
 .info h1 {
@@ -23,5 +26,6 @@ div img {
 
 .info p {
     display: flex;
-    padding: 0 15%;
+    justify-content: center;
+    text-align: center;
 }
