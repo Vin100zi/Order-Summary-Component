@@ -6,17 +6,32 @@ html, body {
     font-family: 'Red Hat Display', 'sans-serif';
 }
 
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
-    background-color: hsl(225, 100%, 98%);
-    height: auto;
-    margin: 30px 35% 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card {
+    margin: 15px 0;
+    box-shadow: 0px 20px 20px 6px rgb(0 0 0 / 30%);
     border-radius: 20px;
+}
+
+.card-wrapper {
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #FFF;
 }
 
 .header img {
     width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
 }
 
 .info h1 {
@@ -37,7 +52,6 @@ html, body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0 10%;
     border-radius: 8px;
 }
 
@@ -75,14 +89,38 @@ html, body {
 }
 
 .payment {
+    margin-top: 20px;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     background-color: hsl(245, 75%, 52%);
     color: hsl(225, 46%, 95%);
-    margin: 5% 10%;
+    width: 100%;
     border-radius: 8px;
     cursor: pointer;
-    transition: 225ms background linear;
+    transition-duration: 225ms;
+    transition-timing-function: linear;
+    transition-property: background;
+    position: relative;
+}
+
+.payment:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    content: '';
+    background: hsl(245deg 78% 27% / 50%);
+}
+
+.pagamento-concluido .payment:hover{
+    background-color: #2e7d32;
+}
+
+.inicia-pagamento .payment:after{
+    transition: 3s width cubic-bezier(0.84, 0.03, 0.08, 0.7);
+    width: 100%;
 }
 
 .payment:hover {
@@ -93,6 +131,7 @@ html, body {
     display: flex;
     justify-content: center;
     padding-bottom: 5%;
+    margin-top: 20px;
 }
 
 .cancel p {
